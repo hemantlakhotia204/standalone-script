@@ -1,0 +1,37 @@
+{
+  "timeZone": "Asia/Kolkata",
+  "dependencies": {
+    "enabledAdvancedServices": [
+      {
+        "userSymbol": "Sheets",
+        "version": "v4",
+        "serviceId": "sheets"
+      }
+    ]
+  },
+  "executionApi": {
+    "access": "ANYONE"
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "addOns": {
+    "common": {
+        "layoutProperties": {
+        "primaryColor": "#2772ed"
+      },
+      "name": "Standalone app",
+      "logoUrl": "https://fundwave.com/assets/img/logo-blue-ribbon.png"
+    },
+    "sheets": {
+      "homepageTrigger": {
+        "enabled": true,
+        "runFunction": "onOpen"
+      }
+    }
+  },
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/script.external_request",
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/script.container.ui"
+  ]
+}
